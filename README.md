@@ -1,4 +1,4 @@
-# Dataseksjonens-innedag
+# Operasjon Dataspeil - Finne og visualisere data.
 
 ##
 Du kan besøke dette repoet på [https://github.com/navikt/dataseksjonens-innedag](https://github.com/navikt/dataseksjonens-innedag). Repoet er åpent og du trenger ikke github-bruker for å se innholdet
