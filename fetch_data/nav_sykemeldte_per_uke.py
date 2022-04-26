@@ -4,7 +4,7 @@ from io import BytesIO
 
 import pandas as pd
 
-from fetch_data.utils import save_dataframe_csv
+from utils import save_dataframe_csv
 
 FOLDER = "data"
 URL = "https://www.nav.no/_/attachment/download/2dedd6e4-f22d-4761-9d7a-07f046c8e889" \
