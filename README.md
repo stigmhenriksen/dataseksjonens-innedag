@@ -1,5 +1,18 @@
 # Dataseksjonens-innedag
 
+##
+Du kan besøke dette repoet på https://github.com/navikt/dataseksjonens-innedag. Repoet er åpent og du trenger ikke github-bruker for å se innholdet
+eller for å clone det til raspberryen. For å clone repoet:
+
+```
+git clone https://github.com/navikt/dataseksjonens-innedag.git
+```
+> **NB!**
+> Hvis du ikke har satt opp bruker lokalt på raspberryen, vil git be om dette. Kjør kommandoene `git config --global user.name "<BRUKERNAVN>"` og 
+> `git config --global user.email "<EPOST>"`. **BRUKERNAVN** og **EPOST** kan du sette til hva du vil. 
+
+
+
 Dette repoet inneholder data i .csv format og python scripts som henter dataen og visualiseres dataen. Dataen som ligger i [data mappen](data/) er et forslag til hva som kan visualiseres, dere står fritt til å bruke annen data. 
 Hvis dere ønsker annen data fra SSB sitt API eller NAV sine sider, kan dere ta utgangspunkt i python-scriptene som ligger i repoet. 
 
@@ -20,18 +33,15 @@ Om dere vil bruke annen data fra SSB eller NAV, så kan dere ta utgangspunkt i s
 
 For å kjøre scriptene, trenger dere å installere noen pakker. Det kan gjøres slik `pip3 install -r requirements.txt`.
 
-> NB! 
-> 
+> NB!
 > Dette kan ta litt tid. 
 
 For å kjøre scriptene kan dere kjøre kommandoen `python3 <script_navn>.py`. Scriptene kan også editeres ved å bruke nano som editor `nano <script_navn>.py`.
 
 
-> **NB!** 
-> 
+> **NB!**
 > Hvis dere ønsker å bruke scriptene for å hente annen data, så trenger dere å erstatte verdiene til variablene **URL** og **QUERY**.
-> 
-> Scriptene burde også kjøres fra root mappen.
+> Scriptene burde også kjøres fra øverste nivå i repoet.
 
 ## Visualisere dataen
 Denne seksjonen handler om hvordan visualisere dataen.
@@ -53,6 +63,7 @@ Dere har nå et flott utgangspunkt til et supert magisk speil.
 
 #### MagicMirror Moduler
 
+
 Her er noen MagicMirror moduler som kan brukes for å visualisere noe data.
 
 | Modulnavn  | Beskrivelse |
@@ -66,3 +77,14 @@ Her er noen MagicMirror moduler som kan brukes for å visualisere noe data.
 For mer inspirasjon, gå til listen over tredjeparts moduler for [MagicMirror](https://github.com/MichMich/MagicMirror/wiki/3rd-party-modules).
 
 ### Python og plotly
+I mappen [visualize_data](visualize_data) finner du to python scripts som visualiserer noe data. Dette er ment som eksempler som dere kan ta utgangspunkt i.
+Hvis dere vil teste **plolty_scatter_graph.py** scriptet, så kan dere kjøre kommandoen : `python3 visualize_data\plolty_scatter_graph.py`. 
+
+Dere vil da få opp
+et vindu i nettleseren med grafen. Hvis dere ikke ønsker å vise grafen i nettleseren kan dere også lagre grafen som png ved å trykke på **download as png** øverst i høyre hjørne i nettleseren. 
+
+![Eksempel graf](images/example_graph.png)
+
+
+## Spørsmål
+Hvis dere har noen spørsmål, ikke nøl med å spørre noen fra komiteen. 

@@ -33,9 +33,7 @@ if __name__ == "__main__":
                       plot_bgcolor="#526175",
                       yaxis={"color": "#d7dbdb", "tickfont": {"size": 20}},
                       xaxis={"color": "#d7dbdb", "tickfont": {"size": 20}},
-                      legend={"font": {"color": "#d7dbdb", "size":20}}
-
-                      )
+                      legend={"font": {"color": "#d7dbdb", "size": 20}})
 
     # Viser figuren i nettleseren
     fig.show()
