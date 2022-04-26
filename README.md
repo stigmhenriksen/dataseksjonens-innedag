@@ -1,7 +1,7 @@
 # Dataseksjonens-innedag
 
 ##
-Du kan besøke dette repoet på https://github.com/navikt/dataseksjonens-innedag. Repoet er åpent og du trenger ikke github-bruker for å se innholdet
+Du kan besøke dette repoet på [https://github.com/navikt/dataseksjonens-innedag](https://github.com/navikt/dataseksjonens-innedag). Repoet er åpent og du trenger ikke github-bruker for å se innholdet
 eller for å clone det til raspberryen. For å clone repoet:
 
 ```
@@ -13,23 +13,23 @@ git clone https://github.com/navikt/dataseksjonens-innedag.git
 
 
 
-Dette repoet inneholder data i .csv format og python scripts som henter dataen og visualiseres dataen. Dataen som ligger i [data mappen](data/) er et forslag til hva som kan visualiseres, dere står fritt til å bruke annen data. 
-Hvis dere ønsker annen data fra SSB sitt API eller NAV sine sider, kan dere ta utgangspunkt i python-scriptene som ligger i repoet. 
+Dette repoet inneholder data i .csv format og python scripts som henter dataen og visualiseres dataen. Dataen som ligger i [data/](data/) er et forslag til hva som kan visualiseres, dere står fritt til å bruke annen data. 
+Hvis dere ønsker annen data fra SSB sitt API eller NAV sine sider, kan dere ta utgangspunkt i python-scriptene som ligger i [fetch_data/](fetch_data/). 
 
 Repoet inneholder også eksempler på hvordan  visualisere dataen i plotly.
 
 ## Data
-Dataen som ligger i [data mappen](data/) er offentlig data hentet fra SSB sitt API og NAV sine sider.
+Dataen som ligger i [data/](data/) er offentlig data hentet fra SSB sitt API og NAV sine sider.
 
-- [nav_sykemeldte_alle_diagnoser.csv](data/nav_sykemeldte_alle_diagnoser.csv): Totalt nye sykmeldte per uke, tidserie. Les mer [her](https://www.nav.no/no/nav-og-samfunn/statistikk/sykefravar-statistikk/nye-sykmeldte-per-uke).
-- [nav_sykemeldte_korona.csv](data/nav_sykemeldte_korona.csv): Antall nye korona relaterte sykmeldte per uke, tidserie. Les mer [her](https://www.nav.no/no/nav-og-samfunn/statistikk/sykefravar-statistikk/nye-sykmeldte-per-uke).
-- [ssb_ledige_stillinger.csv](data/ssb_ledige_stillinger.csv): Sesongjustert antall ledige stillinger i det norske arbeidsmarkedet. Ler mer [her](https://www.ssb.no/statbank/table/11587).
-- [ssb_sykefravaer.csv](data/ssb_sykefravaer.csv): Sykefraværsprosent, ikke-sesongjustert. Les mer [her](https://www.ssb.no/statbank/table/12439).
-- [ssb_fattigdomsproblemer.csv](data/ssb_fattigdomsproblemer.csv): Fattigdomsproblemer, levekårsundersøkelsen. Les mer [her](https://www.ssb.no/statbank/table/12078).
+- [nav_sykemeldte_alle_diagnoser.csv](data/nav_sykemeldte_alle_diagnoser.csv): Totalt nye sykmeldte per uke, tidserie. Les mer [https://www.nav.no/no/nav-og-samfunn/statistikk/sykefravar-statistikk/nye-sykmeldte-per-uke](https://www.nav.no/no/nav-og-samfunn/statistikk/sykefravar-statistikk/nye-sykmeldte-per-uke).
+- [nav_sykemeldte_korona.csv](data/nav_sykemeldte_korona.csv): Antall nye korona relaterte sykmeldte per uke, tidserie. Les mer [https://www.nav.no/no/nav-og-samfunn/statistikk/sykefravar-statistikk/nye-sykmeldte-per-uke](https://www.nav.no/no/nav-og-samfunn/statistikk/sykefravar-statistikk/nye-sykmeldte-per-uke).
+- [ssb_ledige_stillinger.csv](data/ssb_ledige_stillinger.csv): Sesongjustert antall ledige stillinger i det norske arbeidsmarkedet. Ler mer [https://www.ssb.no/statbank/table/11587](https://www.ssb.no/statbank/table/11587).
+- [ssb_sykefravaer.csv](data/ssb_sykefravaer.csv): Sykefraværsprosent, ikke-sesongjustert. Les mer [https://www.ssb.no/statbank/table/12439](https://www.ssb.no/statbank/table/12439).
+- [ssb_fattigdomsproblemer.csv](data/ssb_fattigdomsproblemer.csv): Fattigdomsproblemer, levekårsundersøkelsen. Les mer [https://www.ssb.no/statbank/table/12078](https://www.ssb.no/statbank/table/12078).
 
 
 ### Python-scripts for å hente annen data.
-Om dere vil bruke annen data fra SSB eller NAV, så kan dere ta utgangspunkt i scriptene som ligger [her](fetch_data/) for å hente dataen.
+Om dere vil bruke annen data fra SSB eller NAV, så kan dere ta utgangspunkt i scriptene som ligger [fetch_data/](fetch_data/) for å hente dataen.
 
 For å kjøre scriptene, trenger dere å installere noen pakker. Det kan gjøres slik `pip3 install -r requirements.txt`.
 
@@ -74,10 +74,10 @@ Her er noen MagicMirror moduler som kan brukes for å visualisere noe data.
 |MMM-JsonTable | Tabell basert på en json liste |
 |MMM-json | Vis hele eller deler av en json response|
 
-For mer inspirasjon, gå til listen over tredjeparts moduler for [MagicMirror](https://github.com/MichMich/MagicMirror/wiki/3rd-party-modules).
+For mer inspirasjon, gå til listen over tredjeparts moduler for MagicMirror [https://github.com/MichMich/MagicMirror/wiki/3rd-party-modules](https://github.com/MichMich/MagicMirror/wiki/3rd-party-modules).
 
 ### Python og plotly
-I mappen [visualize_data](visualize_data) finner du to python scripts som visualiserer noe data. Dette er ment som eksempler som dere kan ta utgangspunkt i.
+I mappen [visualize_data/](visualize_data) finner du to python scripts som visualiserer noe data. Dette er ment som eksempler som dere kan ta utgangspunkt i.
 Hvis dere vil teste **plolty_scatter_graph.py** scriptet, så kan dere kjøre kommandoen : `python3 visualize_data\plolty_scatter_graph.py`. 
 
 Dere vil da få opp
