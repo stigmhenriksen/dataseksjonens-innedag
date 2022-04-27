@@ -7,9 +7,10 @@ DATASET = "nav_sykemeldte_alle_diagnoser.csv"
 
 if __name__ == "__main__":
     # Gjør noen enkle transformasjoner
-    df = pd.read_csv(f"{FOLDER}/{DATASET}").replace("*", 0)
+    df = pd.read_csv(f"{FOLDER}/{DATASET}").replace("*", 34000)
     df["2019"] = df["2019"].astype(int)
-    df["2020"] = df["2020"].astype(int)
+    df["2020"] = df["2020"].astype(int)git 
+    df["2022"] = df["2022"].astype(int)
 
     # Lager figur
     fig = go.Figure()
@@ -24,9 +25,15 @@ if __name__ == "__main__":
                                  marker={"color": "#cca39b"},
                                  line={"width": 10},
                                  name="2020")
+    line_graph_2022 = go.Scatter(x=df["Uke"],
+                                 y=df["2022"],
+                                 marker={"color": "blue"},
+                                 line={"width": 10},
+                                 name="2022")
 
     fig.add_trace(line_graph_2019)
     fig.add_trace(line_graph_2020)
+    fig.add_trace(line_graph_2022)
 
     # Styler figuren
     fig.update_layout(paper_bgcolor="#526175",

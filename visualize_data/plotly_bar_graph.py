@@ -12,7 +12,7 @@ if __name__ == "__main__":
 
     # Lager figur
     fig = go.Figure()
-    bar_graph = go.Bar(x=df["Uke"], y=df["2019"], marker={"color": "#d7dbdb"})
+    bar_graph = go.Bar(x=df["Uke"], y=df["2022"], marker={"color": "#d7dbdb"})
     fig.add_trace(bar_graph)
 
     # Styler figuren
